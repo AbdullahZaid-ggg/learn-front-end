@@ -374,7 +374,309 @@ body {
     color: #e6e1e5;
 }
 
+/* ====== Home Page - Hero ====== */
+.hero {
+    text-align: center;
+    padding: 40px 20px 32px;
+    background: linear-gradient(180deg, #1c1b1f 0%, #141218 100%);
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: #4a4458;
+    color: #d0bcff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #e6e1e5;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-highlight {
+    color: #d0bcff;
+}
+
+.hero .lead {
+    font-size: 18px;
+    color: #cac4d0;
+    max-width: 600px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+}
+
+.hero .lead strong {
+    color: #e6e1e5;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.hero-stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #d0bcff;
+    line-height: 1;
+}
+
+.hero-stat-label {
+    font-size: 13px;
+    color: #938f99;
+    font-weight: 400;
+}
+
+/* ====== Home Page - Roadmap ====== */
+.roadmap {
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    color: #e6e1e5;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.section-desc {
+    color: #938f99;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.roadmap-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.roadmap-steps::before {
+    content: '';
+    position: absolute;
+    right: 31px;
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    background: #49454f;
+}
+
+.roadmap-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1c1b1f;
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.roadmap-step:hover {
+    background: #2b2930;
+    transform: translateX(-4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.roadmap-step:active {
+    transform: translateX(0);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.step-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.step-content h3 {
+    color: #e6e1e5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.step-content p {
+    color: #cac4d0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.step-count {
+    display: inline-block;
+    color: #938f99;
+    font-size: 12px;
+    font-weight: 400;
+    background: #2b2930;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.step-arrow {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    color: #938f99;
+}
+
+/* ====== Home Page - Quick Cards ====== */
+.quick-overview {
+    margin-bottom: 32px;
+}
+
+.curriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.curriculum-card {
+    background: #1c1b1f;
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.curriculum-card:hover {
+    background: #2b2930;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.curriculum-card:active {
+    transform: translateY(0);
+}
+
+.card-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.card-icon-emoji {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.curriculum-card h3 {
+    color: #e6e1e5;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.curriculum-card p {
+    color: #cac4d0;
+    font-size: 14px;
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #2b2930;
+}
+
+.curriculum-count {
+    color: #938f99;
+    font-size: 12px;
+    font-weight: 400;
+    background: #2b2930;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.card-link {
+    color: #d0bcff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.curriculum-card:hover .card-link {
+    color: #e6e1e5;
+}
+
 /* ====== Responsive ====== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .lead {
+        font-size: 16px;
+    }
+
+    .hero-stats {
+        gap: 24px;
+    }
+
+    .hero-stat-number {
+        font-size: 26px;
+    }
+
+    .roadmap-steps::before {
+        right: 25px;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        font-size: 14px;
+    }
+
+    .curriculum-grid {
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 768px) {
     .sidebar {
         width: 64px;

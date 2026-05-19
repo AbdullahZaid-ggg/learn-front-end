@@ -29,32 +29,118 @@
 
         <!-- ==================== HOME ==================== -->
         <section id="section-home" class="section active">
-            <h1>مرحباً بك في تطوير الواجهات الأمامية</h1>
-            <p class="lead">دليل شامل لتعلم أساسيات تطوير الويب من الصفر إلى الاحتراف.</p>
-            <div class="curriculum-grid">
-                <div class="curriculum-card" onclick="navigateTo('html')">
-                    <div class="curriculum-number" style="background:#9ecaff20;color:#9ecaff;">1</div>
-                    <h3>HTML</h3>
-                    <p>هيكلة صفحات الويب باستخدام العناصر الدلالية والنماذج والجداول.</p>
-                    <span class="curriculum-count">6 دروس</span>
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-badge">دليل شامل 🔰</div>
+                <h1>مرحباً بك في <span class="hero-highlight">تطوير الواجهات الأمامية</span></h1>
+                <p class="lead">دليل متكامل لتعلم <strong>HTML</strong> و <strong>CSS</strong> و <strong>JavaScript</strong> و <strong>APIs</strong> — من الصفر حتى بناء تطبيقات حقيقية.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">27</span>
+                        <span class="hero-stat-label">درس</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">4</span>
+                        <span class="hero-stat-label">أقسام</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">100%</span>
+                        <span class="hero-stat-label">مجاني</span>
+                    </div>
                 </div>
-                <div class="curriculum-card" onclick="navigateTo('css')">
-                    <div class="curriculum-number" style="background:#d0bcff20;color:#d0bcff;">2</div>
-                    <h3>CSS</h3>
-                    <p>تصميم وتنسيق الصفحات باستخدام Flexbox و Grid والرسوم المتحركة.</p>
-                    <span class="curriculum-count">8 دروس</span>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="roadmap">
+                <h2 class="section-subtitle">📋 خارطة الطريق</h2>
+                <p class="section-desc">اتبع الخطوات بالترتيب لبناء أساس قوي في تطوير الواجهات الأمامية.</p>
+                <div class="roadmap-steps">
+                    <div class="roadmap-step" onclick="navigateTo('html')">
+                        <div class="step-number" style="background:#9ecaff;color:#1c1b1f;">1</div>
+                        <div class="step-content">
+                            <h3>HTML</h3>
+                            <p>هيكلة صفحات الويب بالعناصر الدلالية والنماذج والجداول.</p>
+                            <span class="step-count">6 دروس</span>
+                        </div>
+                        <div class="step-arrow"></div>
+                    </div>
+                    <div class="roadmap-step" onclick="navigateTo('css')">
+                        <div class="step-number" style="background:#d0bcff;color:#1c1b1f;">2</div>
+                        <div class="step-content">
+                            <h3>CSS</h3>
+                            <p>تصميم وتنسيق الصفحات باستخدام Flexbox و Grid والرسوم المتحركة.</p>
+                            <span class="step-count">8 دروس</span>
+                        </div>
+                        <div class="step-arrow"></div>
+                    </div>
+                    <div class="roadmap-step" onclick="navigateTo('js')">
+                        <div class="step-number" style="background:#4ee88a;color:#1c1b1f;">3</div>
+                        <div class="step-content">
+                            <h3>JavaScript</h3>
+                            <p>إضافة التفاعل والمنطق ومعالجة DOM والأحداث.</p>
+                            <span class="step-count">7 دروس</span>
+                        </div>
+                        <div class="step-arrow"></div>
+                    </div>
+                    <div class="roadmap-step" onclick="navigateTo('api')">
+                        <div class="step-number" style="background:#f2b8b5;color:#1c1b1f;">4</div>
+                        <div class="step-content">
+                            <h3>API</h3>
+                            <p>جلب البيانات من الخوادم باستخدام Fetch و Async/Await.</p>
+                            <span class="step-count">6 دروس</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="curriculum-card" onclick="navigateTo('js')">
-                    <div class="curriculum-number" style="background:#4ee88a20;color:#4ee88a;">3</div>
-                    <h3>JavaScript</h3>
-                    <p>إضافة التفاعل والمنطق ومعالجة DOM والأحداث.</p>
-                    <span class="curriculum-count">7 دروس</span>
-                </div>
-                <div class="curriculum-card" onclick="navigateTo('api')">
-                    <div class="curriculum-number" style="background:#f2b8b520;color:#f2b8b5;">4</div>
-                    <h3>API</h3>
-                    <p>جلب البيانات من الخوادم باستخدام Fetch و Async/Await.</p>
-                    <span class="curriculum-count">6 دروس</span>
+            </div>
+
+            <!-- Quick Overview -->
+            <div class="quick-overview">
+                <h2 class="section-subtitle">📖 نظرة سريعة على المنهج</h2>
+                <div class="curriculum-grid">
+                    <div class="curriculum-card" onclick="navigateTo('html')">
+                        <div class="card-icon-wrap" style="background:#9ecaff20;">
+                            <span class="card-icon-emoji">🌐</span>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>هيكلة صفحات الويب باستخدام العناصر الدلالية والنماذج والجداول.</p>
+                        <div class="card-footer">
+                            <span class="curriculum-count">6 دروس</span>
+                            <span class="card-link">ابدأ التعلم →</span>
+                        </div>
+                    </div>
+                    <div class="curriculum-card" onclick="navigateTo('css')">
+                        <div class="card-icon-wrap" style="background:#d0bcff20;">
+                            <span class="card-icon-emoji">🎨</span>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>تصميم وتنسيق الصفحات باستخدام Flexbox و Grid والرسوم المتحركة.</p>
+                        <div class="card-footer">
+                            <span class="curriculum-count">8 دروس</span>
+                            <span class="card-link">ابدأ التعلم →</span>
+                        </div>
+                    </div>
+                    <div class="curriculum-card" onclick="navigateTo('js')">
+                        <div class="card-icon-wrap" style="background:#4ee88a20;">
+                            <span class="card-icon-emoji">⚡</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>إضافة التفاعل والمنطق ومعالجة DOM والأحداث وجلب البيانات.</p>
+                        <div class="card-footer">
+                            <span class="curriculum-count">7 دروس</span>
+                            <span class="card-link">ابدأ التعلم →</span>
+                        </div>
+                    </div>
+                    <div class="curriculum-card" onclick="navigateTo('api')">
+                        <div class="card-icon-wrap" style="background:#f2b8b520;">
+                            <span class="card-icon-emoji">🔗</span>
+                        </div>
+                        <h3>API</h3>
+                        <p>جلب البيانات من الخوادم باستخدام Fetch و Async/Await و REST APIs.</p>
+                        <div class="card-footer">
+                            <span class="curriculum-count">6 دروس</span>
+                            <span class="card-link">ابدأ التعلم →</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
