@@ -50,10 +50,9 @@
 ## 🚀 كيفية الاستخدام
 
 1. افتح `index.html` في المتصفح مباشرة
-2. أو استخدم GitHub Pages:
-   ```
-   https://AbdullahZaid-ggg.github.io/learn-front-end/
-   ```
+2. أو استخدم GitHub Pages على الرابط التالي:
+
+   **👉 [https://AbdullahZaid-ggg.github.io/learn-front-end/](https://AbdullahZaid-ggg.github.io/learn-front-end/)**
 
 ## 📁 هيكل الملفات
 
