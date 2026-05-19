@@ -66,4 +66,5 @@ learn-front-end/
 
 ## 📄 الترخيص
 
-MIT License — يمكنك استخدامه وتعديله بحرية.
+GNU General Public License v3.0 — رخصة حرة تمنع استخدام الكود في المشاريع المغلقة.
+راجع ملف [LICENSE](./LICENSE) للتفاصيل.
